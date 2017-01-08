@@ -5,7 +5,8 @@ Tap code is a simple way to encode text messages on a letter-by-letter basis. Al
 It follows a 5 x 5 letter-matrix structure:
 
 ![alt tag](http://i.imgur.com/bv0Tqh2.png)
-_credit to wikipedia for image_
+
+_Image is from Wikipedia's article on Tap Code_
 
 Instructions
 -----
