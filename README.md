@@ -14,4 +14,4 @@ Run `main.lua` through the command prompt to initiate the program.
 
 3.) `23 .. ....`
 
-*All of the above input will output **Hi***
+*All of the above input will output **Hi** *
