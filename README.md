@@ -10,8 +10,15 @@ Run `main.lua` through the command prompt to initiate the program.
 
 1.) `23 24`
 
-2.) `.. ... .. ....`
+2.) `.. .. ... .... ... .... . ....`
 
-3.) `23 .. ....`
+3.) `... .. 34 42 ... ... 24 ... ... .. ..`
 
-_All of the above input will output **Hi**_
+**Output:**
+
+1.) `Hi`
+
+2.) `Good`
+
+3.) `Morning`
+
