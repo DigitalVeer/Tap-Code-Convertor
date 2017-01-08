@@ -1,6 +1,6 @@
 # Tap-Code-Convertor
 
-Tap code is a simple way to encode text messages on a letter-by-letter basis. Although the system by default uses sounds and audible taps to convey its message, it can also be represented through dots and numbers representing the number of taps.
+[Tap Code](https://en.wikipedia.org/wiki/Tap_code) is a simple way to encode text messages on a letter-by-letter basis. Although the system by default uses sounds and audible taps to convey its message, it can also be represented through dots and numbers representing the number of taps.
 
 It follows a 5 x 5 letter-matrix structure:
 
