@@ -1,5 +1,11 @@
 # Tap-Code-Convertor
-Converts Tap-Code To Readable English
+
+Tap code is a simple way to encode text messages on a letter-by-letter basis. Although the system by default uses sounds and audible taps to convey its message, it can also be represented through dots and numbers representing the number of taps.
+
+It follows a 5 x 5 letter-matrix structure:
+
+![alt tag](http://i.imgur.com/bv0Tqh2.png)
+_credit to wikipedia for image_
 
 Instructions
 -----
@@ -16,9 +22,9 @@ Run `main.lua` through the command prompt to initiate the program.
 
 **Output:**
 
-1.) `Hi`
+1.) `HI`
 
-2.) `Good`
+2.) `GOOD`
 
-3.) `Morning`
+3.) `MORNING`
 
