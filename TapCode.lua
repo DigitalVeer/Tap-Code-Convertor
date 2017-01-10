@@ -1,5 +1,9 @@
 local validator = require("InputValidator")
 
+
+--//Splits each dot-pair into an array.
+--//All these individual arrays are put into a larger array.
+--//Ex. ".. ... .... ." -> { {"..","..."}, {"....", "."} }
 function splitIntoPairs(str)
 
   local pairs = {};
@@ -13,15 +17,26 @@ function splitIntoPairs(str)
   return pairs;
 end
 
+--//Takes a dot-pair split up into a row and column.
+--//Ex: {"...",".."} -> dotsToLetter("...", "..")
 function dotsToLetter(row, column)
-
+  
   local function getPositionInAlphabet()
     return (#row - 1) * 5 + #column;
   end
+  
+  --[[ getPositionInAlphabet()
+  
+  Ex: (row -> "." | col -> "...") [Letter "C"]
+  => (# "." - 1) * 5 + # "..."
+  => (1 - 1) * 5 + 3 = (0) * 5 + 3 = 3
+  *C is the _third_ letter in the alphabet
+  
+  ]]
 
   local startDecimal, cutoffDecimal = ("A"):byte() - 1, ("K"):byte();
   local letterDecimal = startDecimal + getPositionInAlphabet();
-
+  --//The letter "K" is skipped in tap-code as it is used interchangebly with "C"
   if letterDecimal - startDecimal >= (cutoffDecimal - startDecimal) then
     letterDecimal = letterDecimal + 1;
   end
