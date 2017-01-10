@@ -1,5 +1,17 @@
 local validator = {}
 
+--//Ensures we are working with proper input
+--[[
+
+CONDITIONS TO BE MET:
+
+1.) The input length is more than 1 | "." or "1" would not be valid.
+2.) Each dot has a pair. | ".." is not valid alone -> Should be ".. ..."
+3.) Each number has a pair | "1" is not valid alone -> Should be "12"
+4.) No letters to contaminate the string
+
+]]--
+
 function validator.isValid(input)
 
   if #input <= 1 then
@@ -10,7 +22,7 @@ function validator.isValid(input)
   local numberMatch = [[(%d)]];
 
   local function isValidNumPairCount(numPairs)
-    return numPairs % 2 == 0;
+    return numPairs % 2 == 0; --//Make sure each number or dot has a pair to go with it
   end
 
   local function countMatches(match)
@@ -30,7 +42,8 @@ function validator.isValid(input)
 
 end
 
-
+--//Simplifies all numbers to their equivalent dot representation
+--//Ex. "23" becomes " ..  ... "
 function validator.simplify(input)
 
   local spaceFormat = [[ %s ]]
